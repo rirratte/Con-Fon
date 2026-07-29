@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォント公開ページ</title>
+  </head>
+  <body>
+    <h1>文字フォントを公開する</h1>
+  
+    <form method="post" enctype="multipart/form-data">
+     
+      <label for="name">文字名</label>
+        <input id="name" name="name" type="text" required>
+      
+      <label for="author">制作者名</label>
+        <input id="author" name="author" type="text" required>
+      
+      <label for="information">説明</label>
+        <textarea id="information" name="information"></textarea>
+      
+      <label for="file">ファイルをアップロード</label>
+        <input id="file" name="file" type="file" accept=".ttf,.otf" required>
+      
+        <p>商用利用</p>
+      <label>
+        <input type="radio" name="commercial" value="yes">
+        許可
+      </label>
+      <label>
+        <input type="radio" name="commercial" value="no">
+        禁止
+      </label>
+      
+      <p>再配布</p>
+      <label>
+        <input type="radio" name="redistribution" value="yes">
+        許可
+      </label>
+      <label>
+        <input type="radio" name="redistribution" value="no">
+        禁止
+      </label>
+      
+      <p>改変</p>
+      <label>
+        <input type="radio" name="modify" value="yes">
+        許可
+      </label>
+      <label>
+        <input type="radio" name="modify" value="no">
+        禁止
+      </label>
+      
+      <p>クレジット表記</p>
+      <label>
+        <input type="radio" name="credit" value="required">
+        必須
+      </label>
+      <label>
+        <input type="radio" name="credit" value="optional">
+        任意
+      </label>
+      <label>
+        <input type="radio" name="credit" value="none">
+        不要
+      </label>
+              
+      <button type="submit">
+        公開
+      </button>
+    </form>
+  </body>
+</html>
